@@ -13,9 +13,9 @@ Currently, there are some branches of Timezone-List is compatible with the follo
 | [6.x](https://github.com/kangyasin/Timezone-List/tree/6.x)    | 6.x              |
 Result method  `create()` :
 
-![](/Users/macbook/Sites/Timezone-List/img/kangyasin-timezone_1.png)
+![](https://raw.githubusercontent.com/kangyasin/Timezone-List/master/img/kangyasin-timezone_1.png)
 
-![](/Users/macbook/Sites/Timezone-List/img/kangyasin-timezone_2.png)
+![](https://github.com/kangyasin/Timezone-List/blob/master/img/kangyasin-timezone_2.png?raw=true)
 
 
 
