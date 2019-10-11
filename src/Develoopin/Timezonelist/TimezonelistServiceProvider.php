@@ -1,4 +1,4 @@
-<?php namespace Jackiedo\Timezonelist;
+<?php namespace Develoopin\Timezonelist;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 /**
  * TimezonelistServiceProvider
  *
- * @package Jackiedo\Timezonelist
+ * @package Develoopin\Timezonelist
  * @author Jackie Do <anhvudo@gmail.com>
  */
 class TimezonelistServiceProvider extends ServiceProvider
@@ -42,7 +42,7 @@ class TimezonelistServiceProvider extends ServiceProvider
 
         $this->app->booting(function () {
             $loader = AliasLoader::getInstance();
-            $loader->alias('Timezonelist', 'Jackiedo\Timezonelist\Facades\Timezonelist');
+            $loader->alias('Timezonelist', 'Develoopin\Timezonelist\Facades\Timezonelist');
         });
     }
 

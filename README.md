@@ -10,20 +10,20 @@ Currently, there are some branches of Timezone-List is compatible with the follo
 | ------------------------------------------------------------- | ---------------- |
 | [4.x](https://github.com/JackieDo/Timezone-List/tree/4.x)     | 4.x              |
 | [5.x](https://github.com/JackieDo/Timezone-List/tree/5.x)     | 5.x              |
-
+| [6.x](https://github.com/kangyasin/Timezone-List/tree/6.x)    | 6.x              |
 This documentation is use for Laravel 5.x
 
 # Installation
 
 You can install this package through [Composer](https://getcomposer.org).
 
-- First, edit your project's `composer.json` file to require `jackiedo/timezonelist`:
+- First, edit your project's `composer.json` file to require `develoopin/timezonelist`:
 
 ```php
 ...
 "require": {
 	...
-    "jackiedo/timezonelist": "5.*"
+    "develoopin/timezonelist": "6.*"
 },
 ```
 
@@ -39,7 +39,7 @@ $ composer update
 ...
 'providers' => array(
     ...
-    Jackiedo\Timezonelist\TimezonelistServiceProvider::class,
+    Develoopin\Timezonelist\TimezonelistServiceProvider::class,
 ),
 ```
 

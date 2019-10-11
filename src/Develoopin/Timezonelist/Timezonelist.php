@@ -1,4 +1,4 @@
-<?php namespace Jackiedo\Timezonelist;
+<?php namespace Develoopin\Timezonelist;
 
 use DateTime;
 use DateTimeZone;
@@ -6,7 +6,7 @@ use DateTimeZone;
 /**
  * The Timezonelist facade.
  *
- * @package Jackiedo\Timezonelist
+ * @package Develoopin\Timezonelist
  * @author Jackie Do <anhvudo@gmail.com>
  */
 class Timezonelist
