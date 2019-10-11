@@ -11,7 +11,13 @@ Currently, there are some branches of Timezone-List is compatible with the follo
 | [4.x](https://github.com/JackieDo/Timezone-List/tree/4.x)     | 4.x              |
 | [5.x](https://github.com/JackieDo/Timezone-List/tree/5.x)     | 5.x              |
 | [6.x](https://github.com/kangyasin/Timezone-List/tree/6.x)    | 6.x              |
-This documentation is use for Laravel 5.x
+Result method  `create()` :
+
+![](/Users/macbook/Sites/Timezone-List/img/kangyasin-timezone_1.png)
+
+![](/Users/macbook/Sites/Timezone-List/img/kangyasin-timezone_2.png)
+
+
 
 # Installation
 
@@ -51,7 +57,8 @@ To do so, use method `Timezonelist::create($name)`.
 
 Example:
 ```php
-Timezonelist::create('timezone');
+$timezone =  new Timezonelist();
+return $timezone->toArray();
 ```
 
 This will output the following:
@@ -502,9 +509,10 @@ This will output the following:
         </optgroup>
     </select>
 
-Method `Timezonelist::create()` have three parameters:
+Method `create()` have three parameters:
 ```php
-Timezonelist::create($name, $selected, $attr);
+$timezone = new Timezonelist();
+$timezone->create($name, $selected, $attr);
 ```
 - The first parameter is required, but the second and third is optional.
 
@@ -512,28 +520,28 @@ Timezonelist::create($name, $selected, $attr);
 
 Example:
 ```php
-Timezonelist::create('timezone', 'Asia/Ho_Chi_Minh');
+$timezone->create('timezone', 'Asia/Ho_Chi_Minh');
 ```
 
 - The third parameter use to set HTML attribute of select tag.
 
 Example:
 ```php
-Timezonelist::create('timezone', null, 'class="styled"');
+$timezone->create('timezone', null, 'class="styled"');
 ```
 
 You can also add multiple attribute.
 
 Example:
 ```php
-Timezonelist::create('timezone', null, 'id="timezone" class="styled"');
+$timezone->create('timezone', null, 'id="timezone" class="styled"');
 ```
 
 Or you can also add multiple attribute with one array.
 
 Example:
 ```php
-Timezonelist::create('timezone', null, [
+$timezone->create('timezone', null, [
     'id'    => 'timezone',
     'class' => 'styled',
     ...
@@ -546,7 +554,7 @@ You can also render timezone list as an array. To do so, just use method `Timezo
 
 Example in Laravel:
 ```php
-$timezone_list = Timezonelist::toArray();
+$timezone_list = $timezone->toArray();
 ```
 
 # Thanks for use
